@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Geolympics</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sports">Sports</string>
+
+    <!-- TOOLBAR -->
+    <string name="title_main">Welcome in Paris 2024</string>
+    <string name="desc_main">Let us show you the best itinerary
+to take to see all your favorite events.</string>
+
+    <!-- CHOOSE DAY -->
+    <string name="title_chooseday">Select your visit date</string>
+    <string name="desc_chooseday">When would you like to see the games?</string>
+
+    <!-- BUTTON CHOOSE DAY -->
+    <string name="button_chooseday">Select sports</string>
+
+    <!-- CHOOSE SPORTS -->
+    <string name="title_sport">Select your favorite sports</string>
+    <string name="desc_sport">Which sports would you like to see?</string>
+</resources>
