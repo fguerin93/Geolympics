@@ -52,6 +52,8 @@ class SportsActivity : AppCompatActivity() {
 
         val dateChoosedByUser = intent.getStringExtra("date")
 
+        println(dateChoosedByUser)
+
         ref.addValueEventListener( object : ValueEventListener {
 
             override fun onCancelled(p0: DatabaseError) {

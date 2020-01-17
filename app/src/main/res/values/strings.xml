@@ -4,6 +4,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_sports">Sports</string>
 
+    <string name="textview">TextView</string>
+
     <!-- TOOLBAR -->
     <string name="title_main">Welcome in Paris 2024</string>
     <string name="desc_main">Let us show you the best itinerary

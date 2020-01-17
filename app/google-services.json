@@ -1,79 +1,42 @@
 {
   "project_info": {
-    "project_number": "160664900983",
-    "firebase_url": "https://geolympics-ea73a.firebaseio.com",
-    "project_id": "geolympics-ea73a",
-    "storage_bucket": "geolympics-ea73a.appspot.com"
+    "project_number": "711194413547",
+    "firebase_url": "https://geolympics-85396.firebaseio.com",
+    "project_id": "geolympics-85396",
+    "storage_bucket": "geolympics-85396.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:160664900983:android:d4f30835766d5309c37d72",
-        "android_client_info": {
-          "package_name": "com.example.geolympics"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "160664900983-r86tnnv6uc925p0kjslasmjqgr2s3836.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.geolympics",
-            "certificate_hash": "3e1518a93314123385481dde885e746e84a6f7c1"
-          }
-        },
-        {
-          "client_id": "160664900983-rvgcfaa0ndtv4ppldlq3go8202upq92v.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAYFM7iXUPt9J8nC9GtI1gartynkImsdhU"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "160664900983-rvgcfaa0ndtv4ppldlq3go8202upq92v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:160664900983:android:30ac23e99973949fc37d72",
+        "mobilesdk_app_id": "1:711194413547:android:1e25a584602245864d31ae",
         "android_client_info": {
           "package_name": "com.example.geolympics_v2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "160664900983-hvd384tdut474d1iiohhbd4a7gsnbf16.apps.googleusercontent.com",
+          "client_id": "711194413547-uq2jftoq1fm569keplk6fu8pametm467.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.geolympics_v2",
-            "certificate_hash": "3e1518a93314123385481dde885e746e84a6f7c1"
+            "certificate_hash": "3aa80417648ddacce6177ab48e2c8c092b561ff5"
           }
         },
         {
-          "client_id": "160664900983-rvgcfaa0ndtv4ppldlq3go8202upq92v.apps.googleusercontent.com",
+          "client_id": "711194413547-ssmklr5nkqkidqg7eobgm3sfs2e5siud.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAYFM7iXUPt9J8nC9GtI1gartynkImsdhU"
+          "current_key": "AIzaSyA0YvfXoh7l3LHT-TLr9hawDUSLWnX4Hbc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "160664900983-rvgcfaa0ndtv4ppldlq3go8202upq92v.apps.googleusercontent.com",
+              "client_id": "711194413547-ssmklr5nkqkidqg7eobgm3sfs2e5siud.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
