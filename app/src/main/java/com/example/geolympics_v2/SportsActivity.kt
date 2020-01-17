@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,13 +18,11 @@ import kotlinx.android.synthetic.main.activity_sports.*
 import kotlinx.android.synthetic.main.activity_sports.buttonSports
 import kotlinx.android.synthetic.main.activity_sports.descScreen
 import kotlinx.android.synthetic.main.activity_sports.titleScreen
-import kotlinx.android.synthetic.main.activity_test.*
 import kotlinx.android.synthetic.main.item_sport.view.*
 
 class SportsActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var sportList : MutableList<Sport>
-    lateinit var sportChoosedList : MutableList<Sport>
     lateinit var eventList : MutableList<Event>
     lateinit var ref : DatabaseReference
 
@@ -43,7 +42,6 @@ class SportsActivity : AppCompatActivity(), View.OnClickListener {
 
         //mutable list
         sportList = mutableListOf()
-        sportChoosedList = mutableListOf()
         eventList = mutableListOf()
 
         //STATIC STUFF TO AVOID FIREBAAAAAAASE
@@ -179,14 +177,17 @@ class SportsActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View) {
         val index = view.tag as Int
         val sport = sportList[index]
-        Toast.makeText(this, "heyyyyy ${sport}", Toast.LENGTH_SHORT).show()
-        sportChoosedList.add(sport)
-
+        view.alpha = 0.5F
 
         // Click on button change route
         buttonSports.setOnClickListener {
+            val intentData = intent
+            val dateChoosedByUser = intentData.getStringExtra("date")
+
             val intent = Intent(this, EventsActivity::class.java)
-            intent.putExtra("id", sport.name)
+            intent.putExtra("date", dateChoosedByUser)
+            intent.putExtra("id-first-sport", "2")
+            intent.putExtra("id-second-sport", "5")
             startActivity(intent)
         }
     }

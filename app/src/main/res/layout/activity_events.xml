@@ -6,9 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".EventsActivity">
 
-    <TextView
-        android:id="@+id/sportChoosed"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="TextView" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_toolbar"
+            app:popupTheme="@style/AppTheme.NoActionBar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/title_main"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/descScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="@string/desc_main"
+                    android:textColor="#ffffff"
+                    app:lineHeight="18dp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingTop="@dimen/fab_margin"
+                android:paddingRight="@dimen/fab_margin"
+                android:paddingBottom="0dp"
+                android:text="@string/title_event" />
+
+            <TextView
+                android:id="@+id/descEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="@dimen/fab_margin"
+                android:paddingTop="0dp"
+                android:paddingRight="@dimen/fab_margin"
+                android:text="@string/desc_event" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/EventsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="60dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_gradient"
+            android:text="@string/button_event"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

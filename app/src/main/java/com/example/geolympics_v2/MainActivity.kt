@@ -10,7 +10,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_test.*
 import kotlinx.android.synthetic.main.sports.view.*
 import java.text.SimpleDateFormat
 import java.util.*
