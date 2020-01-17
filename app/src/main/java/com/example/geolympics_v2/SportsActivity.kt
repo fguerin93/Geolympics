@@ -1,5 +1,6 @@
 package com.example.geolympics_v2
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +9,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 import kotlinx.android.synthetic.main.activity_sports.*
+import kotlinx.android.synthetic.main.activity_sports.buttonSports
+import kotlinx.android.synthetic.main.activity_sports.descScreen
+import kotlinx.android.synthetic.main.activity_sports.titleScreen
 import kotlinx.android.synthetic.main.activity_test.*
 import kotlinx.android.synthetic.main.item_sport.view.*
 
@@ -47,12 +52,19 @@ class SportsActivity : AppCompatActivity() {
         titleSports.typeface = typefaceBold
         descSports.typeface = typefaceRegular
 
+        buttonSports.typeface = typefaceBold
 
-        val intent = intent
 
-        val dateChoosedByUser = intent.getStringExtra("date")
+        val intentData = intent
 
-        println(dateChoosedByUser)
+        val dateChoosedByUser = intentData.getStringExtra("date")
+
+        // Click on button change route
+
+        buttonSports.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
 
         ref.addValueEventListener( object : ValueEventListener {
 
