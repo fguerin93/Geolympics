@@ -1,5 +1,6 @@
 package com.example.geolympics_v2
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
@@ -111,6 +112,13 @@ class EventsActivity : AppCompatActivity(), View.OnClickListener {
 
         val adapter = EventAdapter(eventList, this)
         recyclerView.adapter = adapter
+
+
+        // Click on button change route
+        buttonEvent.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onClick(v: View?) {
