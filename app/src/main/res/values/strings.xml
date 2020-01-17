@@ -23,6 +23,9 @@ to take to see all your favorite events.</string>
     <string name="desc_sport">Which sports would you like to see?</string>
 
     <string name="button_sports">Let\'s go</string>
+    <string name="let_s_go_swimming_competition">Let\'s go, swimming competition!</string>
+
+
     <string name="title_activity_events">EventsActivity</string>
 
     <!-- CHOOSE EVENTS -->
