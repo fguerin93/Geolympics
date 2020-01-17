@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -24,10 +25,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignRight="@+id/imgSport"
                 android:layout_centerVertical="true"
+                android:layout_marginTop="0dp"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
                 android:textColor="@color/colorPrimary"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/numberComp"
@@ -35,15 +36,15 @@
                 android:layout_height="wrap_content"
                 android:layout_alignRight="@+id/imgSport"
                 android:layout_centerVertical="true"
-                android:alpha="0.5"/>
+                android:alpha="0.5" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/imgSport"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp" />
 
     </androidx.cardview.widget.CardView>

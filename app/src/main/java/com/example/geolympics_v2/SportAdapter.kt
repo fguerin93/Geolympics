@@ -33,7 +33,7 @@ class SportAdapter(val sportList: List<Sport>,val eventNumberList: List<String>,
         val sport = sportList[position]
         val event = eventNumberList[position]
         val numberComp = event[0]
-        holder.icon.setImageResource(R.mipmap.ic_launcher_round)
+        holder.icon.setImageResource(sport.icon)
         holder.text.text = sport.name
         holder.eventNumber.text = numberComp.toString() + " competitions availables"
         holder.cardView.setOnClickListener(itemClickListener)
