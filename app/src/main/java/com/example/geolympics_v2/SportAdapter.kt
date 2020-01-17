@@ -36,6 +36,7 @@ class SportAdapter(val sportList: List<Sport>,val eventNumberList: List<String>,
         holder.icon.setImageResource(sport.icon)
         holder.text.text = sport.name
         holder.eventNumber.text = numberComp.toString() + " competitions availables"
+        holder.cardView.tag = position
         holder.cardView.setOnClickListener(itemClickListener)
     }
 

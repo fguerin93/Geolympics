@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_events.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 import kotlinx.android.synthetic.main.activity_sports.*
@@ -22,10 +23,11 @@ import kotlinx.android.synthetic.main.item_sport.view.*
 class SportsActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var sportList : MutableList<Sport>
+    lateinit var sportChoosedList : MutableList<Sport>
     lateinit var eventList : MutableList<Event>
     lateinit var ref : DatabaseReference
 
-    //static
+    //STATIC STUFF TO AVOID FIREBAAAAASE
     lateinit var swimmingList : MutableList<Event>
     lateinit var athleticsList : MutableList<Event>
     lateinit var tennisList : MutableList<Event>
@@ -41,9 +43,10 @@ class SportsActivity : AppCompatActivity(), View.OnClickListener {
 
         //mutable list
         sportList = mutableListOf()
+        sportChoosedList = mutableListOf()
         eventList = mutableListOf()
 
-        //static
+        //STATIC STUFF TO AVOID FIREBAAAAAAASE
         swimmingList = mutableListOf()
         swimmingList.add(Event("Men's 100m Butterfly Final","18/1/2020", "10:30", "12:30"))
         swimmingList.add(Event("Women's 200m Backstroke Final","18/1/2020", "10:30", "12:30"))
@@ -81,7 +84,6 @@ class SportsActivity : AppCompatActivity(), View.OnClickListener {
         sportList.add(Sport(4, "Beach Volley", R.mipmap.ic_volleyball, beachVolleyList))
         sportList.add(Sport(5,"Fencing", R.mipmap.ic_fencing, fencingList))
         sportList.add(Sport(6,"Archery", R.mipmap.ic_archery, archeryList))
-
         //
 
         // ref for db
@@ -128,16 +130,7 @@ class SportsActivity : AppCompatActivity(), View.OnClickListener {
         //
 
 
-
-
-
-        // Click on button change route
-
-        buttonSports.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
-            startActivity(intent)
-        }
-
+        /* FIREBASE NOT WORKING DUE TO CONNECTION
         ref.addValueEventListener( object : ValueEventListener {
 
             override fun onCancelled(p0: DatabaseError) {
@@ -179,10 +172,23 @@ class SportsActivity : AppCompatActivity(), View.OnClickListener {
             }
         })
 
+         */
+
     }
 
     override fun onClick(view: View) {
-        Toast.makeText(this, "heyyyyy", Toast.LENGTH_SHORT).show()
+        val index = view.tag as Int
+        val sport = sportList[index]
+        Toast.makeText(this, "heyyyyy ${sport}", Toast.LENGTH_SHORT).show()
+        sportChoosedList.add(sport)
+
+
+        // Click on button change route
+        buttonSports.setOnClickListener {
+            val intent = Intent(this, EventsActivity::class.java)
+            intent.putExtra("id", sport.name)
+            startActivity(intent)
+        }
     }
 
 
