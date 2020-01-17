@@ -75,28 +75,34 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/SportsRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="20dp" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="60dp" />
 
         </LinearLayout>
 
 
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/buttonSports"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_gradient"
-            android:textColor="#FFF"
-            android:textAllCaps="false"
-            android:textSize="18dp"
-            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="@dimen/fab_margin"
-            android:text="@string/button_sports" />
-
-    </LinearLayout>
-
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_gradient"
+            android:text="@string/button_sports"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+    </RelativeLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

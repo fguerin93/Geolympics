@@ -76,23 +76,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            />
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/buttonChooseDay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_gradient"
-            android:textColor="#FFF"
-            android:textAllCaps="false"
-            android:textSize="18dp"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
             android:layout_marginLeft="@dimen/fab_margin"
             android:layout_marginRight="@dimen/fab_margin"
-            android:text="@string/button_chooseday" />
-
-    </LinearLayout>
-
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_gradient"
+            android:text="@string/button_chooseday"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+    </RelativeLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

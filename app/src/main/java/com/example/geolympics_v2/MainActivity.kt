@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
 
         buttonChooseDay.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
+            val intent = Intent(this, SportsActivity::class.java)
             intent.putExtra("date", date)
             startActivity(intent)
         }
