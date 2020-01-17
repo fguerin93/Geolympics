@@ -1,42 +1,69 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "440822178148",
     "firebase_url": "https://geolympicz.firebaseio.com",
     "project_id": "geolympicz",
     "storage_bucket": "geolympicz.appspot.com"
+=======
+    "project_number": "711194413547",
+    "firebase_url": "https://geolympics-85396.firebaseio.com",
+    "project_id": "geolympics-85396",
+    "storage_bucket": "geolympics-85396.appspot.com"
+>>>>>>> 3916a927fdc40085a18157da8fb78c761e1a031e
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:440822178148:android:aa67b2e425cd8b33309a71",
+=======
+        "mobilesdk_app_id": "1:711194413547:android:1e25a584602245864d31ae",
+>>>>>>> 3916a927fdc40085a18157da8fb78c761e1a031e
         "android_client_info": {
           "package_name": "com.example.geolympics_v2"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "440822178148-kefvpgltftuq3qhtmrd5mrr8k5juo229.apps.googleusercontent.com",
+=======
+          "client_id": "711194413547-uq2jftoq1fm569keplk6fu8pametm467.apps.googleusercontent.com",
+>>>>>>> 3916a927fdc40085a18157da8fb78c761e1a031e
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.geolympics_v2",
-            "certificate_hash": "3e1518a93314123385481dde885e746e84a6f7c1"
+            "certificate_hash": "3aa80417648ddacce6177ab48e2c8c092b561ff5"
           }
         },
         {
+<<<<<<< HEAD
           "client_id": "440822178148-s0vvpedlqe4qo3k294ppbkioeone3kqd.apps.googleusercontent.com",
+=======
+          "client_id": "711194413547-ssmklr5nkqkidqg7eobgm3sfs2e5siud.apps.googleusercontent.com",
+>>>>>>> 3916a927fdc40085a18157da8fb78c761e1a031e
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyBCQhgelLvmEgSXZVjLSRC7qjtAvpuQOik"
+=======
+          "current_key": "AIzaSyA0YvfXoh7l3LHT-TLr9hawDUSLWnX4Hbc"
+>>>>>>> 3916a927fdc40085a18157da8fb78c761e1a031e
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "440822178148-s0vvpedlqe4qo3k294ppbkioeone3kqd.apps.googleusercontent.com",
+=======
+              "client_id": "711194413547-ssmklr5nkqkidqg7eobgm3sfs2e5siud.apps.googleusercontent.com",
+>>>>>>> 3916a927fdc40085a18157da8fb78c761e1a031e
               "client_type": 3
             }
           ]
