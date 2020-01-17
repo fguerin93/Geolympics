@@ -13,14 +13,11 @@ import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 import kotlinx.android.synthetic.main.activity_sports.*
-<<<<<<< HEAD
-=======
 import kotlinx.android.synthetic.main.activity_sports.buttonSports
 import kotlinx.android.synthetic.main.activity_sports.descScreen
 import kotlinx.android.synthetic.main.activity_sports.titleScreen
 import kotlinx.android.synthetic.main.activity_test.*
 import kotlinx.android.synthetic.main.item_sport.view.*
->>>>>>> afd6617ca3158fb79230d0b20fa30c7da8f8ceb3
 
 class SportsActivity : AppCompatActivity(), View.OnClickListener {
 
