@@ -21,4 +21,6 @@ to take to see all your favorite events.</string>
     <!-- CHOOSE SPORTS -->
     <string name="title_sport">Select your favorite sports</string>
     <string name="desc_sport">Which sports would you like to see?</string>
+
+    <string name="button_sports">Let\'s go</string>
 </resources>

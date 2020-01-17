@@ -83,14 +83,17 @@
 
 
         <Button
-            android:id="@+id/buttonChooseDay"
+            android:id="@+id/buttonSports"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_gradient"
             android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="@dimen/fab_margin"
             android:layout_marginRight="@dimen/fab_margin"
-            android:text="@string/button_chooseday" />
+            android:text="@string/button_sports" />
 
     </LinearLayout>
 

@@ -47,4 +47,5 @@ dependencies {
 
     // Get API
     implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
 }
